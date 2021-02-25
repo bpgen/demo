@@ -1,0 +1,30 @@
+databaseChangeLog:
+  - changeSet:
+      id: loadData-into-currency-converter
+      author: anz
+      changes:
+        - loadData:
+            catalogName:  cat
+            columns:
+              - column:
+                  header:  source
+                  name:  source
+                  type:  STRING
+              - column:
+                  header: target
+                  name:  target
+                  type:  STRING
+              - column:
+                  header: rate
+                  name: rate
+                  type: NUMERIC
+
+            commentLineStartsWith:  //
+            encoding:  UTF-8
+            file:  /data/currency_convertion.csv
+            quotchar:  ''''
+            relativeToChangelogFile:  true
+            schemaName:  public
+            separator:  ','
+            tableName:  currency_converter
+            usePreparedStatements:  true

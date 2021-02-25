@@ -1,0 +1,33 @@
+databaseChangeLog:
+  - changeSet:
+      id: loadData-into-accounts
+      author: anz
+      changes:
+        - loadData:
+            catalogName:  cat
+            columns:
+              - column:
+                  header:  name
+                  name:  name
+                  type:  STRING
+              - column:
+                  header: type
+                  name:  type
+                  type:  STRING
+              - column:
+                  header: bal_date
+                  name:  balance_date
+                  type:  DATE
+              - column:
+                  header: currency
+                  name: currency
+                  type: STRING
+            commentLineStartsWith:  //
+            encoding:  UTF-8
+            file:  /data/accounts.csv
+            quotchar:  ''''
+            relativeToChangelogFile:  true
+            schemaName:  public
+            separator:  ','
+            tableName:  accounts
+            usePreparedStatements:  true

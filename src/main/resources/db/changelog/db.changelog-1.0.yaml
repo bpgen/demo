@@ -1,0 +1,25 @@
+databaseChangeLog:
+  -  changeSet:
+       id: table-accounts
+       author: anz
+       changes:
+         -  createTable:
+              tableName:  accounts
+              columns:
+                -  column:
+                     name: number
+                     type: int
+                     autoIncrement: true
+                     constraints:
+                       primaryKey: true
+                       nullable:  false
+                -  column:
+                     name: name
+                     type: varchar(100)
+                -  column:
+                     name: type
+                     type: varchar(50)
+                -  column:
+                     name: currency
+                     type: varchar(3)
+

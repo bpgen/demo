@@ -1,0 +1,25 @@
+databaseChangeLog:
+  -  changeSet:
+       id: table-currency-converter
+       author: anz
+       changes:
+         -  createTable:
+              tableName:  currency_converter
+              columns:
+                -  column:
+                     name: id
+                     type: int
+                     autoIncrement: true
+                     constraints:
+                       primaryKey: true
+                       nullable:  false
+                -  column:
+                     name: source
+                     type: varchar(3)
+                -  column:
+                     name: target
+                     type: varchar(3)
+                -  column:
+                     name: rate
+                     type: decimal(10,2)
+

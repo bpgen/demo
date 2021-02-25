@@ -1,0 +1,41 @@
+databaseChangeLog:
+  - changeSet:
+      id: loadData-into-transactions
+      author: anz
+      changes:
+        - loadData:
+            catalogName:  cat
+            columns:
+              - column:
+                  header:  account_number
+                  name:  account_number
+                  type:  NUMERIC
+              - column:
+                  header: transaction_date
+                  name:  value_date
+                  type:  DATE
+              - column:
+                  header: currency
+                  name:  currency
+                  type:  STRING
+              - column:
+                  header: debit_credit
+                  name: debit_credit
+                  type: STRING
+              - column:
+                    header: amount
+                    name: amount
+                    type: NUMERIC
+              - column:
+                   header: transaction_comment
+                   name: narrative
+                   type: STRING
+            commentLineStartsWith:  //
+            encoding:  UTF-8
+            file:  /data/transactions.csv
+            quotchar:  ''''
+            relativeToChangelogFile:  true
+            schemaName:  public
+            separator:  ','
+            tableName:  transactions
+            usePreparedStatements:  true

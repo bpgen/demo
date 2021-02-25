@@ -1,0 +1,33 @@
+databaseChangeLog:
+  -  changeSet:
+       id: table-transactions
+       author: anz
+       changes:
+         -  createTable:
+              tableName: transactions
+              columns:
+                -  column:
+                     name: transaction_number
+                     type: int
+                     autoIncrement: true
+                     constraints:
+                       primaryKey: true
+                       nullable:  false
+                -  column:
+                     name: account_number
+                     type: int
+                -  column:
+                     name: value_date
+                     type: date
+                -  column:
+                     name: currency
+                     type: varchar(3)
+                -  column:
+                     name: debit_credit
+                     type: varchar(10)
+                -  column:
+                     name: amount
+                     type: decimal(10,2)
+                -  column:
+                     name: narrative
+                     type: varchar(250)

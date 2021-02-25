@@ -1,0 +1,14 @@
+account_number,transaction_date,currency,debit_credit,amount,transaction_comment
+887878701,2021-02-23,SGD,DEBIT,12.78, transfer from Ronnie
+887878701,2021-02-23,SGD,CREDIT,112.50, transfer from Ronnie
+887878701,2021-02-23,SGD,DEBIT,12.78, transfer from Ronnie
+887878702,2021-02-23,SGD,CREDIT,11.68, transfer from Ronnie
+887878703,2021-02-23,SGD,CREDIT,12.78, transfer from Ronnie
+887878703,2021-02-23,SGD,DEBIT,12.78, transfer from Ronnie
+887878704,2021-02-23,SGD,DEBIT,12.78, transfer from Ronnie
+887878705,2021-02-23,SGD,CREDIT,112.68, transfer from Ronnie
+887878705,2021-02-23,SGD,DEBIT,12.78, transfer from Ronnie
+887878705,2021-02-23,SGD,DEBIT,12.78, transfer from Ronnie
+887878705,2021-02-23,SGD,DEBIT,12.78, transfer from Ronnie
+887878705,2021-02-23,SGD,DEBIT,12.78, transfer from Ronnie
+
